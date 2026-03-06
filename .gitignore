@@ -1,7 +1,7 @@
 # 生成的文档（让学员自己生成）
 *.docx
-*.xlsx
-*.pptx
+
+# Python 缓存
 
 # Python 缓存
 __pycache__/
