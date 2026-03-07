@@ -1,5 +1,7 @@
 # 生成的文档（让学员自己生成）
-*.docx
+# 但 materials/ 目录下的示例文件需要提交
+!/materials/*.docx
+!/materials/*.xlsx
 
 # Python 缓存
 
