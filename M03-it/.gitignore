@@ -1,3 +1,4 @@
 node_modules/
 *.pptx
 package-lock.json
+pptx-generator.js
