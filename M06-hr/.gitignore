@@ -1,0 +1,14 @@
+# 生成的文档
+*_analysis*.xlsx
+*_report*.docx
+*_presentation*.pptx
+*_plan*.md
+*_qa*.md
+*_email*.docx
+manager_report_*.docx
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 注意：materials/目录下的示例文件需要保留
