@@ -353,26 +353,21 @@
 
 ## 实验三：根据项目报告生成 PPT 演示文稿
 
-### 前置准备：安装 PPT 生成工具（首次使用）
+### 前置准备：确认 PPT 生成环境（首次使用）
 
-> 💡 **说明**：此步骤只需执行一次，后续可以直接使用。
+> 💡 **说明**：此步骤只需检查一次，通常 python-pptx 已预装。
 
-在开始实验三之前，请先安装 PPT 生成工具：
+在开始实验三之前，请确认 PPT 生成环境：
 
 ```
-请帮我配置 PPT 生成功能。
+请确认当前环境已安装 python-pptx 库，可以生成 PowerPoint 演示文稿。
 
-需要安装 pptxgenjs 库，让我可以用自然语言生成 PowerPoint 演示文稿。
+如果没有安装，请执行：pip install python-pptx
 
-请执行以下命令：
-1. 在当前工作目录初始化 npm：npm init -y
-2. 安装 pptxgenjs：npm install pptxgenjs
-3. 确认安装成功
-
-安装完成后告诉我。
+确认完成后告诉我。
 ```
 
-等待 OpenCode 完成安装（约 1-2 分钟）。
+通常 OpenCode 已预装该库，可以直接使用。
 
 ---
 
@@ -624,20 +619,20 @@ plt.rcParams['axes.unicode_minus'] = False
 ### Q7: PPT 生成背后的技术原理是什么？
 
 **技术栈**：
-- **核心库**：pptxgenjs（JavaScript PPT 生成库）
-- **Skill**：Anthropic 官方 pptx skill
-- **运行环境**：Node.js
+- **核心库**：python-pptx（Python PPT 生成库）
+- **运行环境**：Python 3.8+
+- **依赖**：通常已预装，无需额外安装
 
 **工作流程**：
 1. 用户输入自然语言提示词
-2. OpenCode 理解需求，调用 pptx-generator.js
-3. pptxgenjs 库生成.pptx 文件
+2. OpenCode 理解需求，自动编写 Python 代码
+3. python-pptx 库生成.pptx 文件
 4. 获得可在 PowerPoint 中打开的文件
 
-**为什么需要安装 npm 依赖？**
-- pptxgenjs 是 JavaScript 库，需要 Node.js 环境
-- 只需安装一次，后续可以重复使用
-- 这是目前生成真正.pptx 文件的最可靠方案
+**为什么不需要额外安装？**
+- python-pptx 是 Python 库，OpenCode 通常已预装
+- 开箱即用，无需配置
+- 这是目前最简单的 PPT 生成方案
 
 ---
 
