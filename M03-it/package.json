@@ -1,0 +1,15 @@
+{
+  "name": "m03-it",
+  "version": "1.0.0",
+  "description": "> **适用对象**：IT 项目经理、技术负责人、系统管理员   > **所需工具**：OpenCode Desktop（本地安装）   > **难度**：⭐⭐⭐ 中等   > **预计时间**：约 60 分钟",
+  "main": "generate-ppt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

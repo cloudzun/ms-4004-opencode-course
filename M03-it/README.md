@@ -448,7 +448,35 @@
 
 ### 第三步：转换为 PPT（手动或自动）
 
-**方案 A：使用 VBA 宏自动转换（推荐，效率高）**
+**方案 A：使用 Node.js + pptxgenjs 生成（推荐，真正的.pptx）**
+
+使用 Anthropic 官方的 pptx skill，通过 Node.js 和 pptxgenjs 库直接生成 PowerPoint 文件：
+
+```bash
+# 安装依赖
+npm install pptxgenjs
+
+# 运行生成脚本
+node generate-ppt.js
+```
+
+**优点**：
+- 生成真正的.pptx 文件（137KB）
+- 支持自定义样式（颜色、字体、布局）
+- 支持演讲备注
+- 支持表格、两列布局等复杂排版
+
+**缺点**：
+- 需要 Node.js 环境
+- 样式需要手动配置代码
+
+**适用**：快速生成带样式的 PPT 初稿
+
+> 💡 **提示**：课程已提供生成脚本（`generate-ppt.js` 和 `pptx-generator.js`），可以直接使用或根据需要修改。
+
+---
+
+**方案 B：使用 VBA 宏自动转换（备选）**
 
 让 OpenCode 生成 VBA 宏代码，自动将 Word 大纲转换为 PowerPoint 幻灯片：
 
@@ -457,7 +485,7 @@
 可以将 PPT 演讲大纲.docx 的内容自动转换为 PowerPoint 幻灯片。
 ```
 
-**优点**：一键生成真正的.pptx 文件，效率高  
+**优点**：一键生成，无需额外依赖  
 **缺点**：样式简单（白纸黑字），需要手动美化  
 **适用**：快速生成初稿，后续手动调整样式
 
@@ -465,7 +493,7 @@
 
 ---
 
-**方案 B：手动复制（质量可控，推荐用于正式场合）**
+**方案 C：手动复制（质量可控，推荐用于正式场合）**
 
 1. 打开 PowerPoint，创建新演示文稿
 2. 根据 Word 大纲，逐页创建幻灯片
@@ -478,17 +506,6 @@
 
 ---
 
-**方案 C：等待未来 skill 支持**
-
-> 💡 **预期管理**：PPT 直接生成技术正在快速发展。建议关注：
-> - OpenClaw 社区的 PPT 生成 skill（如 office-automation-skill）
-> - python-pptx 库的 OpenCode 集成
-> - 未来大模型的原生 PPT 生成能力
->
-> 随着模型和 skill 的进步，未来可能支持直接生成带样式的.pptx 文件。
-
----
-
 ### 预期输出
 
 完成以上步骤后：
@@ -496,7 +513,7 @@
 | 输出 | 内容 | 大小参考 | 说明 |
 |------|------|---------|------|
 | `PPT 演讲大纲.docx` | 10-12 张幻灯片的标题、要点、演讲备注 | ~50-80KB | 必选 |
-| `PPT 演示文稿.pptx` | PowerPoint 幻灯片文件 | ~100KB-2MB | 使用 VBA 生成（样式简单）或手动创建（样式精美） |
+| `IT 项目状态报告_2026Q1.pptx` | PowerPoint 幻灯片文件（带样式） | ~137KB | 使用 pptxgenjs 生成（推荐） |
 
 ---
 
@@ -632,25 +649,46 @@ plt.rcParams['axes.unicode_minus'] = False
 
 ---
 
-### Q7: PPT 生成的样式太简单怎么办？
+### Q7: 如何生成带样式的 PPT 文件？
 
-**原因**：VBA 宏自动生成的 PPT 只包含基本内容，没有精美样式。
+**推荐方案**：使用 Node.js + pptxgenjs（Anthropic 官方 pptx skill）
 
-**解决**：
-1. **使用 PowerPoint 设计师工具**：打开 PPT 后，使用"设计师"功能自动美化
-2. **手动调整**：应用 PowerPoint 内置模板，调整配色和布局
-3. **等待 skill**：关注 OpenClaw 社区的 PPT 生成 skill 进展（未来可能支持直接生成带样式的 PPT）
+**步骤**：
+1. 安装依赖：`npm install pptxgenjs`
+2. 使用提供的生成脚本：`node generate-ppt.js`
+3. 获得带样式的.pptx 文件（137KB）
 
-**预期管理**：当前 VBA 方案适合快速生成初稿，正式场合建议手动美化或使用 PowerPoint 设计师工具。
+**样式特点**：
+- 深蓝色主题（`#1E2761`）
+- 微软雅黑中文字体
+- 支持标题页、内容页、两列布局、表格页
+- 包含演讲备注
+
+**进阶美化**：
+1. 在 PowerPoint 中打开生成的文件
+2. 使用"设计师"工具自动美化
+3. 应用 PowerPoint 内置模板
+4. 调整配色和布局
+
+**预期管理**：当前方案生成基础样式的 PPT，正式场合建议进一步美化。
 
 ---
 
 ## 🔗 相关资源
 
+### 官方文档
 - [OpenCode 官方文档](https://github.com/openclaw/opencode)
 - [Microsoft MS-4004 原版课程](https://github.com/MicrosoftLearning/MS-4004-Empower-workforce-copilot-use-cases)
 - [OpenClaw 社区](https://clawhub.ai)
-- [python-pptx 库文档](https://python-pptx.readthedocs.io/)（PPT 生成技术参考）
+
+### 技术参考
+- [pptxgenjs 库文档](https://gitbub.com/gitbub/pptxgenjs)（PPT 生成核心库）
+- [Anthropic pptx skill](https://github.com/anthropics/skills/tree/main/skills/pptx)（官方 PPT 技能）
+- [python-pptx 库文档](https://python-pptx.readthedocs.io/)（Python PPT 生成参考）
+
+### 课程脚本
+- `pptx-generator.js`：PPT 生成器封装库
+- `generate-ppt.js`：根据大纲生成 PPT 的脚本
 
 ---
 
