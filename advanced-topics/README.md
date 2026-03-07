@@ -9,6 +9,7 @@
 | 子目录 | 主题 | 状态 |
 |--------|------|------|
 | **agent-research/** | Agent 定制可行性研究 | ✅ 完成 |
+| **agent-designs/** | Agent 详细设计文档 | ✅ 进行中 |
 
 ---
 
@@ -57,7 +58,7 @@
 
 ## 📊 可用 Agent 素材
 
-基于 M01-M04 模块分析，共发现 **6 个 Agent，10 个实验**：
+基于 M01-M05 模块分析，共发现 **9 个 Agent，18 个实验**：
 
 | 模块 | Agent | 数量 | 实验数 |
 |------|-------|------|--------|
@@ -65,9 +66,13 @@
 | M02 | RFP Response | 1 | 3 |
 | M03 | Surveys + Analyst | 2 | 2 |
 | M04 | Market Research + Analyst | 2 | 3 |
-| **总计** | - | **6** | **10** |
+| M05 | Financial Analyst + Contract Reviewer + Financial Insights | 3 | 8 |
+| **总计** | - | **9** | **18** |
 
-详细分析：[agent-research/m01-m03-agent-analysis.md](agent-research/m01-m03-agent-analysis.md)
+详细分析：
+- [M01-M03 Agent 分析](agent-research/m01-m03-agent-analysis.md)
+- [M04 可行性分析](agent-research/feasibility-analysis.md)
+- [M05 财务场景分析](agent-research/m05-finance-analysis.md)
 
 ---
 
@@ -79,6 +84,9 @@
 | **Phase 2** | M03 Surveys + Analyst Agents | 2-3 周 | ⏳ 待开始 |
 | **Phase 3** | M02 RFP Response Agent | 3-4 周 | ⏳ 待开始 |
 | **Phase 4** | M04 Market Research + Analyst | 4-6 周 | ⏳ 待开始 |
+| **Phase 5** | M05 Contract Reviewer Agent | 4 周 | ⏳ 待开始 |
+
+> 💡 **优先级最高**：Contract Reviewer Agent（合同审查专家）- 商业价值最高，设计文档已完成
 
 ---
 
@@ -91,4 +99,12 @@
 ---
 
 **维护者**：HuaQloud AI Architect  
-**最后更新**：2026-03-07 09:15 UTC
+**最后更新**：2026-03-07 11:30 UTC
+
+---
+
+## 📝 更新日志
+
+- **2026-03-07**：新增 M05 财务场景分析，Agent 总数增至 9 个
+- **2026-03-07**：新增 `agent-designs/` 目录，存放详细设计文档
+- **2026-03-07**：Contract Reviewer Agent 设计文档完成（优先级最高）

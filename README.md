@@ -27,7 +27,7 @@
 | **M02** | 销售场景 | 销售团队、售前工程师 | Word 销售提案、Excel RFP 分析 | ✅ 完成 |
 | **M03** | IT 场景 | IT 项目经理、技术负责人 | Word 项目报告、Excel 调查分析、PPT 演示文稿 | ✅ 完成 |
 | **M04** | 市场场景 | 市场团队、品牌专员 | Word 报告整合、Excel 营销分析、AI 创意生成、AI 文案优化 | ✅ 完成 |
-| M05 | 财务场景 | 财务人员、分析师 | 财务报告、预算编制 | ⏳ 待开发 |
+| **M05** | 财务场景 | 财务人员、分析师 | Excel COGS 分析、Word 合同对比、PPT 高管演示、会议笔记总结、邮件起草 | ✅ 完成 |
 | M06 | HR 场景 | 人力资源、招聘团队 | 员工文档、招聘材料 | ⏳ 待开发 |
 | M07 | 运营场景 | 运营团队、项目经理 | 运营报告、流程优化 | ⏳ 待开发 |
 | M08 | 沟通场景 | 全员 | 邮件、会议纪要 | ⏳ 待开发 |
@@ -76,7 +76,17 @@ ms-4004-opencode-course/
 ├── M03-it/                      # M03 IT 场景
 │   ├── README.md                # 实验手册
 │   └── materials/               # 示例文件
-└── ...                          # 后续模块
+├── M04-marketing/               # M04 市场场景
+│   ├── README.md                # 实验手册
+│   └── materials/               # 示例文件
+├── M05-finance/                 # M05 财务场景（最新）
+│   ├── README.md                # 实验手册
+│   ├── experiment_verification_report_revised.md  # 验证报告
+│   └── materials/               # 示例文件
+└── advanced-topics/             # 高阶主题（Agent 设计）
+    ├── README.md                # 导航文档
+    ├── agent-research/          # Agent 研究报告
+    └── agent-designs/           # Agent 设计文档
 ```
 
 ---
