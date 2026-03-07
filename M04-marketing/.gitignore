@@ -1,8 +1,12 @@
-# 生成的文档
-*.docx
-*.xlsx
-*.pptx
+# 生成的文档（学员自己生成的）
+LATAM*.docx
+营销分析*.xlsx
+营销创意*.docx
+营销文案*.docx
+营销建议*.docx
 
 # Python 缓存
 __pycache__/
 *.py[cod]
+
+# 注意：materials/目录下的示例文件需要保留
