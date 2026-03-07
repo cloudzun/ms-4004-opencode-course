@@ -3,9 +3,12 @@
 *_comparison*.docx
 *_presentation*.pptx
 *_summary*.docx
+*_summary*.md
 *_assessment*.docx
 *_tips*.docx
 *_email*.docx
+*_email*.md
+*_report_revised*.md
 
 # Python 缓存
 __pycache__/
