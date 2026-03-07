@@ -1,0 +1,13 @@
+# 生成的文档
+*.docx
+*.xlsx
+*.pptx
+*.pdf
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 临时文件
+*.tmp
+*.log
