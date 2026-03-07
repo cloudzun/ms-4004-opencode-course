@@ -42,10 +42,10 @@
 
 | 文件名 | 说明 |
 |--------|------|
-| `产品描述.docx` | Mystic Spice Premium Chai Tea 产品信息 |
-| `市场趋势.docx` | 拉丁美洲市场趋势数据 |
-| `推广计划.docx` | 产品推广计划 |
-| `营销数据.xlsx` | 销售数据、社交媒体互动、搜索趋势 |
+| `product_description.docx` | Mystic Spice Premium Chai Tea 产品信息 |
+| `market_trends.docx` | 拉丁美洲市场趋势数据 |
+| `promotion_plan.docx` | 产品推广计划 |
+| `marketing_data.xlsx` | 销售数据、社交媒体互动、搜索趋势 |
 
 > 请将 `materials/` 文件夹放在你的工作目录下，然后打开 OpenCode Desktop，将工作目录指向该文件夹的上一级目录。
 
@@ -74,9 +74,9 @@
 
 ```
 请读取 materials 目录下的以下文件：
-- 产品描述.docx
-- 市场趋势.docx
-- 推广计划.docx
+- product_description.docx
+- market_trends.docx
+- promotion_plan.docx
 
 合并为一份统一的市场分析报告，包含以下章节：
 1. 执行摘要
@@ -104,9 +104,9 @@
 
 ```
 请读取 materials 目录下的以下文件：
-- 产品描述.docx
-- 市场趋势.docx
-- 推广计划.docx
+- product_description.docx
+- market_trends.docx
+- promotion_plan.docx
 
 整合为一份完整的市场分析报告，结构如下：
 
@@ -154,7 +154,7 @@
 
 | 文件名 | 内容 | 大小参考 |
 |--------|------|---------|
-| `LATAM 市场分析报告.docx` | 执行摘要、产品概述、市场分析、推广计划、竞争分析 | ~100-200KB |
+| `latam_market_analysis.docx` | 执行摘要、产品概述、市场分析、推广计划、竞争分析 | ~100-200KB |
 
 > 💡 **注意**：如果 Word 文档已打开，OpenCode 可能无法覆盖，会生成 `_v2` 版本（见常见问题）。
 
@@ -202,7 +202,7 @@
 #### 🟢 入门版提示词
 
 ```
-请读取 materials/营销数据.xlsx，
+请读取 materials/marketing_data.xlsx，
 分析以下问题：
 
 1. 销量最高的 3 个月份
@@ -210,7 +210,7 @@
 3. 推荐下个月的营销预算分配
 
 请将分析结果保存为新的 Excel 文件，
-文件名：营销数据分析报告.xlsx
+文件名：marketing_analysis_report.xlsx
 ```
 
 ---
@@ -221,7 +221,7 @@
 <summary>📋 点击展开优化版提示词</summary>
 
 ```
-请读取 materials/营销数据.xlsx，
+请读取 materials/marketing_data.xlsx，
 完成以下分析任务：
 
 **分析要求**：
@@ -237,7 +237,7 @@
 - 包含数据表格
 - 生成可视化图表（柱状图、折线图、散点图）
 
-保存为：营销数据分析报告.xlsx
+保存为：marketing_analysis_report.xlsx
 ```
 
 </details>
@@ -249,7 +249,7 @@
 如果需要图表来直观展示分析结果，继续输入：
 
 ```
-请在营销数据分析报告.xlsx 中，
+请在 marketing_analysis_report.xlsx 中，
 生成以下图表：
 
 1. 月度销售趋势图（折线图）
@@ -274,7 +274,7 @@
 3. 下个月各渠道预算分配建议（百分比）
 4. 风险提示和应对措施
 
-保存为：营销建议.docx
+保存为：marketing_recommendations.docx
 ```
 
 ---
@@ -409,7 +409,7 @@
 
 | 文件名 | 内容 | 大小参考 |
 |--------|------|---------|
-| `营销创意方案.docx` | 5 个完整的营销创意方案 | ~50-100KB |
+| `marketing_ideas.docx` | 5 个完整的营销创意方案 | ~50-100KB |
 
 ---
 
@@ -525,7 +525,7 @@
 
 | 文件名 | 内容 | 大小参考 |
 |--------|------|---------|
-| `营销文案合集.docx` | 3 个风格的营销文案（温暖、专业、年轻） | ~20-50KB |
+| `marketing_copywriting.docx` | 3 个风格的营销文案（温暖、专业、年轻） | ~20-50KB |
 
 ---
 
