@@ -753,6 +753,60 @@ manager_report_[姓名].docx
 
 ## ❓ 常见问题
 
+### Q0: 提示"FileNotFoundError"或"找不到文件"怎么办？
+
+**原因**：OpenCode 不知道文件的完整路径，或者工作目录设置不正确。
+
+**场景**：
+你在 Windows 本地运行 OpenCode，但文件可能在：
+- OneDrive 文件夹
+- 桌面
+- 文档文件夹
+- 其他位置
+
+**解决**：
+
+**方法 1：使用完整路径（推荐）**
+```
+请读取 C:/Users/你的用户名/Documents/M06-hr/materials/manager_metrics.xlsx，
+分析 HR 经理绩效数据。
+
+保存为：C:/Users/你的用户名/Documents/M06-hr/hr_manager_analysis.xlsx
+```
+
+**方法 2：确认工作目录**
+1. 打开 OpenCode Desktop
+2. 检查工作目录是否指向 `M06-hr/` 目录
+3. 如果不是，重新打开 OpenCode 并选择正确的目录
+
+**方法 3：使用相对路径**
+```
+请读取 materials/manager_metrics.xlsx，
+分析 HR 经理绩效数据。
+
+保存为：hr_manager_analysis.xlsx
+```
+前提：OpenCode 的工作目录必须是 `M06-hr/` 的父目录
+
+**预防**：
+- ✅ 在提示词中使用完整路径（最可靠）
+- ✅ 确认 OpenCode 工作目录正确
+- ✅ 先在文件资源管理器中确认文件位置
+
+**Windows 路径示例**：
+```
+C:/Users/你的用户名/Documents/M06-hr/materials/manager_metrics.xlsx
+C:/Users/你的用户名/OneDrive/M06-hr/materials/manager_metrics.xlsx
+```
+
+**WSL/Linux 路径示例**：
+```
+/home/chengzh/clawd/MS-4004-opencode-course/M06-hr/materials/manager_metrics.xlsx
+/mnt/c/Users/你的用户名/Documents/M06-hr/materials/manager_metrics.xlsx
+```
+
+---
+
 ### Q1: Excel 数据读取失败怎么办？
 
 **原因**：文件路径错误或文件被占用。
