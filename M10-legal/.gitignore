@@ -1,0 +1,21 @@
+# M10 法律场景 .gitignore
+
+# 生成的输出文件（学生作业）
+legal_guidance.md
+contract_summary.docx
+risk_matrix.xlsx
+policy_update_log.md
+legal_knowledge_index.md
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 验证报告
+experiment_verification_report.md
+
+# 临时文件
+*.tmp
+*.log
