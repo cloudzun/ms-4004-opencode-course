@@ -1,0 +1,15 @@
+# 生成的文档（验证输出）
+communication_brief.docx
+communication_brief_optimized.docx
+communication_analysis.xlsx
+announcement_email.docx
+announcement_email_urgent.docx
+campaign_ideas.md
+ab_testing_copy.docx
+experiment_verification_report.md
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 注意：materials/目录下的示例文件需要保留
