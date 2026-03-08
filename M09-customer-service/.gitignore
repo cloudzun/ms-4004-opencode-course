@@ -1,0 +1,14 @@
+# 生成的文档（验证输出）
+support_journey.md
+support_improvements.md
+response_templates.docx
+quality_issue_urgent.docx
+troubleshooting_checklist.md
+troubleshooting_flowchart.md
+experiment_verification_report.md
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 注意：materials/目录下的示例文件需要保留
