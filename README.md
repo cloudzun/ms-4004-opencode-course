@@ -1,4 +1,4 @@
-# MS-4004 OpenCode 办公效率课程
+# Vibe Working - AI 办公效率实战课程
 
 > 基于 Microsoft MS-4004 官方课程内容，适配 OpenCode 本地化实现
 
@@ -51,8 +51,8 @@
 
 1. **克隆仓库**
    ```bash
-   git clone https://github.com/cloudzun/ms-4004-opencode-course.git
-   cd ms-4004-opencode-course/M01-executives
+   git clone https://github.com/cloudzun/vibe-working.git
+   cd vibe-working/M01-executives
    ```
 
 2. **打开 OpenCode Desktop**

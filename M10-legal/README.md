@@ -1014,4 +1014,4 @@ python3 verify_experiments.py
 
 **文档版本**：v1.0  
 **最后更新**：2026-03-08  
-**GitHub**：https://github.com/cloudzun/ms-4004-opencode-course
+**GitHub**：https://github.com/cloudzun/vibe-working

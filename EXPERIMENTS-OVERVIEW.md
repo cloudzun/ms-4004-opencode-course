@@ -1,4 +1,4 @@
-# MS-4004 OpenCode 课程 - 10 个场景实验概览
+# Vibe Working - 10 个场景实验概览
 
 > 本课程包含 10 个业务场景，共 50+ 个实验，覆盖企业核心职能部门。
 
@@ -191,4 +191,4 @@
 
 **课程版本**：v1.0  
 **最后更新**：2026-03-08  
-**GitHub**：https://github.com/cloudzun/ms-4004-opencode-course
+**GitHub**：https://github.com/cloudzun/vibe-working
