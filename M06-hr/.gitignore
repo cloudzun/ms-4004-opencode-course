@@ -1,11 +1,10 @@
-# 生成的文档
-*_analysis*.xlsx
-*_report*.docx
-*_presentation*.pptx
-*_plan*.md
-*_qa*.md
-*_email*.docx
-manager_report_*.docx
+# 生成的文档（验证输出）
+hr_manager_analysis.xlsx
+hr_summary_report.docx
+email_to_cfo.docx
+hr_action_plan.md
+hr_policy_qa_test.md
+experiment_verification_report.md
 
 # Python 缓存
 __pycache__/
