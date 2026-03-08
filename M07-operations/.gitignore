@@ -1,0 +1,18 @@
+# 生成的文档（验证输出）
+brainstorming_notes.md
+project_schedule.md
+heating_system_comparison.md
+heating_executive_summary.docx
+market_research_supplement.md
+heating_presentation.pptx
+project_tracker.md
+project_status_report.docx
+safety_change_email.docx
+safety_change_email_urgent.docx
+experiment_verification_report.md
+
+# Python 缓存
+__pycache__/
+*.py[cod]
+
+# 注意：materials/目录下的示例文件需要保留
